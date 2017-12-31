@@ -14,7 +14,7 @@ rayon = "0.9.0"
 ndarray = { version = "0.10.13", features = ["serde-1"] }
 derive_builder = "0.5.1"
 
-wyrm = "0.1.0"
+wyrm = { path = "../wyrm" }
 
 [profile.release]
 lto = true

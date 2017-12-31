@@ -358,7 +358,7 @@ impl ImplicitFactorizationModel {
                         loss_value += loss.value().scalar_sum();
 
                         optimizer.step();
-                        optimizer.zero_gradients();
+                        loss.zero_gradient();
                     }
                 }
 
